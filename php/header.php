@@ -8,5 +8,3 @@
     <script src="<?php echo $path;?>/js/script.js"></script>
     <link rel="stylesheet" href="<?php echo $path;?>/styles/styles.css">
 </head>
-
-header php working.
