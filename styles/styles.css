@@ -11,7 +11,7 @@ body {
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 46px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
 }
@@ -22,8 +22,13 @@ p {
     line-height: 1.5em;
     color: white;
 }
+ 
+a:hover { /*CSS FOR LOGO HOVER*/
+    transform: scale(1.02);
+    transition: 0.5s;
+}
 
-li { 
+a li { /*CSS FOR NAV*/
     color: white;
     position: relative;
     right: 20px;
@@ -36,14 +41,15 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    transform: scale(1.02);
-    transition: 0.5s;
+a > li:hover { /*CSS FOR NAV HOVER*/
+    transform: scale(1.04);
+    transition: 1.1s;
+    color: gold;
 }
 
-a > li:hover {
-    transform: scale(1.05);
-    transition: 0.75s;
+ul {
+    color: white;
+    margin: 0 200px;
 }
 
 .container {
@@ -79,6 +85,7 @@ a > li:hover {
 
 .content {
     margin: 10px 100px;
+    display: block;
 }
 
 .content > p {
