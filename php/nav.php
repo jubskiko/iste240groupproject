@@ -4,6 +4,7 @@
 
     <ol class="list">
         <a href="<?php echo $path;?>html/gettingStarted.php"><li>Getting Started</li></a>
+        <a href="<?php echo $path;?>html/commands.php"><li>Commands</li></a>
         <a href="<?php echo $path;?>html/userManagement.php"><li>User Management</li></a>
         <a href="<?php echo $path;?>html/fileManagement.php"><li>File Management</li></a>
         <a href="<?php echo $path;?>html/processManagement.php"><li>Process Management</li></a>

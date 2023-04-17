@@ -100,6 +100,23 @@ ul {
     float: right;
 }
 
+.treePhoto {
+    height: 300px;
+    width: 500px;
+    background-image: url("../images/tree.jpg"); /*IMAGE SOURCE: https://www.linuxtrainingacademy.com/linux-directory-structure-and-file-system-hierarchy/*/
+    background-size: cover;
+    float: left;
+    margin-right: 20px;
+}
+
+.shellScriptPhoto {
+    height: 300px;
+    width: 600px;
+    background-image: url("../images/shellScript.webp"); /*IMAGE SOURCE: https://www.guru99.com/introduction-to-shell-scripting.html*/
+    background-size: cover;
+    float: right;
+    margin-left: 20px;
+}
 
 
 
