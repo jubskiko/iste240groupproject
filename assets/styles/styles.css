@@ -73,7 +73,7 @@ ul {
 .logo {
     grid-row: 1;
 
-    background-image: url("../images/150x150.png");
+    background-image: url("../img/150x150.png");
     background-size: cover;
 
     border-bottom: 1px solid var(--GRAY);
@@ -95,7 +95,7 @@ ul {
 .terminalPhoto {
     height: 300px;
     width: 500px;
-    background-image: url("../images/terminal2.png"); /*IMAGE SOURCE: https://itnext.io/unix-shells-and-terminals-6012fe713e4f*/
+    background-image: url("../img/terminal2.png"); /*IMAGE SOURCE: https://itnext.io/unix-shells-and-terminals-6012fe713e4f*/
     background-size: cover;
     float: right;
 }
@@ -103,7 +103,8 @@ ul {
 .treePhoto {
     height: 300px;
     width: 500px;
-    background-image: url("../images/tree.jpg"); /*IMAGE SOURCE: https://www.linuxtrainingacademy.com/linux-directory-structure-and-file-system-hierarchy/*/
+    max-width: 100%;
+    background-image: url("../img/tree.jpg"); /*IMAGE SOURCE: https://www.linuxtrainingacademy.com/linux-directory-structure-and-file-system-hierarchy/*/
     background-size: cover;
     float: left;
     margin-right: 20px;
@@ -112,15 +113,11 @@ ul {
 .shellScriptPhoto {
     height: 300px;
     width: 600px;
-    background-image: url("../images/shellScript.webp"); /*IMAGE SOURCE: https://www.guru99.com/introduction-to-shell-scripting.html*/
+    background-image: url("../img/shellScript.webp"); /*IMAGE SOURCE: https://www.guru99.com/introduction-to-shell-scripting.html*/
     background-size: cover;
     float: right;
     margin-left: 20px;
 }
-
-
-
-
 
 .footer {
     display: flex;

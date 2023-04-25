@@ -1,14 +1,14 @@
 <?php 
-    $title = "File Management Page";
+    $title = "File Management";
     $path = "../";
-    include("../php/header.php");
+    include($path . "./assets/inc/header.php");
 ?>
 
 <body>
 
     <div class="container">
 
-        <?php include("../php/nav.php"); ?>
+        <?php include($path .  "./assets/inc/nav.php"); ?>
 
         <main class="content">
 
@@ -39,5 +39,5 @@
 </body>
 
 <?php 
-    include("../php/footer.php");
+    include($path . "./assets/inc/footer.php");
 ?>

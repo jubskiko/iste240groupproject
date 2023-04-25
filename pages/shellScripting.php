@@ -1,14 +1,14 @@
 <?php 
     $title = "Shell Scripting";
     $path = "../"; 
-    include($path . "php/header.php");
+    include($path . "./assets/inc/header.php");
 ?>
 
 <body>
 
     <div class="container">    
 
-        <?php include($path . "php/nav.php"); ?>
+        <?php include($path . "./assets/inc/nav.php"); ?>
 
         <main class="content">
 
@@ -40,5 +40,5 @@
 </body>
 
 <?php 
-    include($path . "php/footer.php");
+    include($path . "./assets/inc/footer.php");
 ?>
