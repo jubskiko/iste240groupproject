@@ -1,0 +1,203 @@
+:root {
+    --BLUE: rgb(55, 16, 134);
+    --DARKBLUE: rgb(34, 9, 85);
+    --GRAY: rgb(46, 46, 46);
+  }
+  
+
+body {
+    margin: 0;
+    /*background: var(--BLUE);*/
+    background-image: linear-gradient(180deg, #8900F2, #10002B);
+
+}
+
+h1 {
+    font-size: 50px;
+    font-family: Source Sans Pro, sans-serif;
+    color: white;
+}
+
+p {
+    font-family: Open Sans, sans-serif;
+    font-size: 18px;
+    line-height: 1.5em;
+    color: white;
+}
+
+li {
+    font-family: Open Sans, sans-serif;
+}
+ 
+a:hover { /*CSS FOR LOGO HOVER*/
+    transform: scale(1.02);
+    transition: 0.5s;
+}
+
+a li { /*CSS FOR NAV*/
+    font-family: Source Sans Pro, sans-serif;
+    color: white;
+    position: relative;
+    right: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a > li:hover { /*CSS FOR NAV HOVER*/
+    transform: scale(1.04);
+    transition: 0.5s;
+    color: #f9c80e;
+}
+
+a > li:active { /* active*/
+    background: #6930c3;
+    color: #e7c6ff;
+}
+
+ul {
+    color: white;
+    margin: 0 100px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    grid-template-rows: 1fr;
+    
+}
+
+.nav {
+    grid-template-columns: 1;
+
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 150px auto;
+
+    background: #8900F2;
+    box-shadow: 5px 5px 100px black;
+}
+
+.logo {
+    grid-row: 1;
+
+    background-image: url("../img/150x150.png");
+    background-size: cover;
+
+    border-bottom: 1px solid var(--GRAY);
+}
+
+.list {
+    list-style-type: none;
+}
+
+.content {
+    margin: 10px 100px;
+    display: block;
+}
+
+.content > p {
+    margin-left: 50px;
+}
+
+.terminalPhoto {
+    height: 300px;
+    width: 500px;
+    background-image: url("../img/terminal2.png"); /*IMAGE SOURCE: https://itnext.io/unix-shells-and-terminals-6012fe713e4f*/
+    background-size: cover;
+    float: right;
+}
+
+.treePhoto {
+    height: 300px;
+    width: 500px;
+    max-width: 100%;
+    background-image: url("../img/tree.jpg"); /*IMAGE SOURCE: https://www.linuxtrainingacademy.com/linux-directory-structure-and-file-system-hierarchy/*/
+    background-size: cover;
+    float: left;
+    margin-right: 20px;
+}
+
+.shellScriptPhoto {
+    height: 300px;
+    width: 600px;
+    background-image: url("../img/shellScript.webp"); /*IMAGE SOURCE: https://www.guru99.com/introduction-to-shell-scripting.html*/
+    background-size: cover;
+    float: right;
+    margin-left: 20px;
+}
+
+.footer{
+  color:#bbadff;
+  background-color: #343a40;
+  padding: 1rem;
+  font-family: Open Sans, sans-serif;
+}
+
+.credits{
+  color:#bbadff;
+  font-size: 12px;
+  margin-left: 1em;
+}
+
+.mobile-nav-bar {
+    display: none;
+}
+
+@media all and (max-width: 800px) {
+
+    .nav {
+        display: none;
+    }
+
+    .nav > a:first-child {
+        display: none;
+    }
+
+    .container {
+        display: block;
+    }
+
+    .content {
+        margin: 20px;
+    }
+
+    .content > p {
+        margin-left: 0;
+    }
+
+    ul {
+        margin: 0;
+    }
+
+    .terminalPhoto {
+        height: 200px;
+        width: 100%;
+        float: none;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .mobile-nav-bar {
+        display: block;
+    }
+
+    .mobile-nav-bar #mobile-nav-hamburger {
+        padding: 10px;
+        background-color: #bd0ee9;
+        border: none;
+    }
+}
+
+/* This here is to make sure on desktop view, the left nav is always displayed */
+@media all and (min-width: 801px) {
+    #navigation-menu {
+      display: grid !important;
+    }
+}
