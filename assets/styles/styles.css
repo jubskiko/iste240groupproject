@@ -49,7 +49,7 @@ a > li:hover { /*CSS FOR NAV HOVER*/
 
 ul {
     color: white;
-    margin: 0 200px;
+    margin: 0 100px;
 }
 
 .container {
@@ -131,4 +131,62 @@ ul {
     font-family: 'Times New Roman', Times, serif;
     font-size: 18px;
     margin-left: 25px;
+}
+
+.mobile-nav-bar {
+    display: none;
+}
+
+@media all and (max-width: 800px) {
+
+    .nav {
+        display: none;
+    }
+
+    .nav > a:first-child {
+        display: none;
+    }
+
+    .container {
+        display: block;
+    }
+
+    .content {
+        margin: 20px;
+    }
+
+    .content > p {
+        margin-left: 0;
+    }
+
+    ul {
+        margin: 0;
+    }
+
+    .terminalPhoto {
+        height: 200px;
+        width: 100%;
+        float: none;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .mobile-nav-bar {
+        display: block;
+    }
+
+    .mobile-nav-bar #mobile-nav-hamburger {
+        padding: 10px;
+        background-color: #bd0ee9;
+        border: none;
+    }
+}
+
+/* This here is to make sure on desktop view, the left nav is always displayed */
+@media all and (min-width: 801px) {
+    #navigation-menu {
+      display: grid !important;
+    }
 }

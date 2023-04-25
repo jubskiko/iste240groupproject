@@ -1,4 +1,11 @@
-<nav class="nav">
+<!-- for mobile navigation -->
+<div class="mobile-nav-bar">
+  <button id="mobile-nav-hamburger">
+    <img src="<?php echo $path;?>./assets/img/hamburger-menu.svg">
+  </button>
+</div>
+
+<nav class="nav" id="navigation-menu">
 
     <a href="<?php echo $path;?>./index.php"><img class="logo" src="<?php echo $path;?>./assets/img/150x150.png" alt="Team Logo Image"></a>
 
