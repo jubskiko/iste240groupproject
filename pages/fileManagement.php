@@ -19,7 +19,9 @@
             <p>UNIX organizes files in a tree structure hierarchy.  For the system to function properly and to enable 
                 effective data storage and retrieval, the file system structure is crucial.</p>
 
-            <div class="treePhoto"></div>
+            <div class="treePhoto">
+                <img src="../assets/img/tree.jpg" alt="Photo of file tree">
+            </div>
 
             <p>The forward slash (/) character designates the root directory, which is the top-level directory in the file 
                 system hierarchy. The root directory serves as the top-level storage location for all other directories and 
