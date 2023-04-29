@@ -19,27 +19,32 @@
     $questions = getQuizQuestions($conn);
 
     include($path . "assets/inc/header.php");
+    
     $conn->close();
 ?>
 <body>
     <div class="container">    
+
     <?php include($path . "assets/inc/nav.php"); ?>
+
         <main class="content">
-        <h1><?php echo($title)?></h1>
-        <hr>
-        <form id="quizForm" action="process_quiz.php" method="post">
-            <?php foreach ($questions as $index => $question): ?>
-            <p>
-            <?php echo ($index + 1) . ". " . $question["question"]; ?>
-            </p>
-            <?php foreach (range('A', 'D') as $choice): ?>
-            <input type="radio" name="answer_<?php echo $question["id"]; ?>" value="<?php echo $choice; ?>" required>
-            <?php echo $choice . ": " . $question["choice_" . strtolower($choice)]; ?><br>
-            <?php endforeach; ?>
-            <?php endforeach; ?>
-            <br>
-            <input type="submit" name="submit" value="Submit Quiz">
-        </form>
+            
+            <h1><?php echo($title)?></h1>
+            <a class="locator" href="<?php echo $path; ?>index.php">Home/<?php echo $title; ?></a>
+            <hr>
+            <form id="quizForm" action="process_quiz.php" method="post">
+                <?php foreach ($questions as $index => $question): ?>
+                <p>
+                <?php echo ($index + 1) . ". " . $question["question"]; ?>
+                </p>
+                <?php foreach (range('A', 'D') as $choice): ?>
+                <input type="radio" name="answer_<?php echo $question["id"]; ?>" value="<?php echo $choice; ?>" required>
+                <?php echo $choice . ": " . $question["choice_" . strtolower($choice)]; ?><br>
+                <?php endforeach; ?>
+                <?php endforeach; ?>
+                <br>
+                <input type="submit" name="submit" value="Submit Quiz">
+            </form>
         </main>
     </div>
 </body>

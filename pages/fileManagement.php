@@ -14,6 +14,8 @@
 
             <h1>UNIX: File Management</h1>
 
+            <a class="locator" href="<?php echo $path; ?>index.php">Home/<?php echo $title; ?></a>
+
             <hr>
 
             <p>UNIX organizes files in a tree structure hierarchy.  For the system to function properly and to enable 

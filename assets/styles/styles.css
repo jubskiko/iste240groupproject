@@ -64,6 +64,13 @@ ul {
     margin: 0 100px;
 }
 
+.locator {
+    color: darkgray; 
+    font-size: 16px; 
+    text-decoration: none; 
+    padding-left: 25px;
+}
+
 .container {
     display: grid;
     grid-template-columns: 150px 1fr;
@@ -145,13 +152,13 @@ ul {
 .footer{
   color:#bbadff;
   background-color: #343a40;
-  padding: 1rem;
+  padding: 0.2rem;
   font-family: Open Sans, sans-serif;
 }
 
 .credits{
   color:#bbadff;
-  font-size: 12px;
+  font-size: 18px;
   margin-left: 1em;
 }
 

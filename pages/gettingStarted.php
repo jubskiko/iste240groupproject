@@ -14,6 +14,8 @@
 
             <h1><?php echo($title)?></h1>
 
+            <a class="locator" href="<?php echo $path; ?>index.php">Home/<?php echo $title; ?></a>
+
             <hr>
 
             <p>An essential part of utilizing the operating system under UNIX is logging in and out. It enables users to 

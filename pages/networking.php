@@ -14,6 +14,8 @@
 
             <h1><?php echo($title)?></h1>
 
+            <a class="locator" href="<?php echo $path; ?>index.php">Home/<?php echo $title; ?></a>
+
             <hr>
 
             <p>For many years, networking environments have made extensive use of operating systems based on UNIX. 

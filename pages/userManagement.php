@@ -14,6 +14,8 @@
 
             <h1><?php echo($title)?></h1>
 
+            <a class="locator" href="<?php echo $path; ?>index.php">Home/<?php echo $title; ?></a>
+
             <hr>
 
             <p>The root account is the super account and has complete access to and controls the whole system. The root is used to 

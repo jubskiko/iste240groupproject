@@ -14,6 +14,8 @@
 
             <h1><?php echo($title)?></h1>
 
+            <a class="locator" href="<?php echo $path; ?>index.php">Home/<?php echo $title; ?></a>
+
             <hr>
 
             <p>Shell scripting is a scripting feature of UNIX that allows users to automate tasks and perform operations. A 
