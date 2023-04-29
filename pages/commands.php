@@ -45,6 +45,8 @@
                 data repositories. While these are some of the most common and consistently used commands, they only brush the surface of 
                 what UNIX can really do.</p>
 
+            <?php include($path . "./assets/inc/terminal.php"); ?>
+
         </main>
 
     </div>

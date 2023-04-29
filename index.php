@@ -23,7 +23,9 @@
                 is a computer operating system used to execute programs on the computer. UNIX is widely used and 
                 an essential file management tool, especially for a developer.</p>
 
-            <div class="terminalPhoto"></div> 
+            <div class="terminalPhoto">
+                <img src="assets/img/terminal2.png" alt="Photo of terminal">
+            </div> 
             
             <p> UNIX was initially developed in 1969 at the Bell Labs in Murray Hill, New Jersey. Researchers Dennis 
                 Ritchie and Ken Thompson are accredited as the original developers of UNIX, known initially as AT&T 
