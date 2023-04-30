@@ -29,7 +29,7 @@ function writeActiveClass($currentLink) {
     <ol class="list">
         <li><a href="<?php echo $path;?>./index.php" <?php  writeActiveClass('index'); ?> >Home</a></li>
         <li><a href="<?php echo $path;?>pages/gettingStarted.php" <?php  writeActiveClass('gettingStarted'); ?> >Getting Started</a></li>
-        <li><a href="<?php echo $path;?>pages/commands.php" <?php  writeActiveClass('commands'); ?> ><li>Commands</a></li>
+        <li><a href="<?php echo $path;?>pages/commands.php" <?php  writeActiveClass('commands'); ?> >Commands</a></li>
         <li><a href="<?php echo $path;?>pages/userManagement.php" <?php  writeActiveClass('userManagement'); ?> >User Management</a></li>
         <li><a href="<?php echo $path;?>pages/fileManagement.php" <?php  writeActiveClass('fileManagement'); ?> >File Management</a></li>
         <li><a href="<?php echo $path;?>pages/processManagement.php" <?php  writeActiveClass('processManagement'); ?> >Process Management</a></li>
