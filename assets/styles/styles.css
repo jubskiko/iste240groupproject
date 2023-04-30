@@ -55,17 +55,18 @@ a {
 .nav li a:hover { /*CSS FOR NAV HOVER*/
     transform: scale(1.04);
     transition: 0.5s;
+}
+
+.beginner:hover {
+    color: #2fa02b;
+}
+
+.intermeadiate:hover {
     color: #f9c80e;
 }
 
-.nav a:active { /* active*/
-    background: #6930c3;
-    color: #e7c6ff;
-}
-
-.nav a.active {
-    font-weight: bold;
-    color: #f9c80e;
+.advanced:hover {
+    color: rgb(214, 25, 25);
 }
 
 ul {
