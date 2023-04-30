@@ -36,6 +36,10 @@
                 extensions, which reveal the type of file, and by a combination of letters, numbers, and special characters in 
                 their names. For instance, .txt stands for a text file, .html for an HTML file, and .png for a picture file.</p>
 
+            <p>File Management is important because it is responsible for efficiently organizing an individual's data. Some
+                projects can consist of many different files, so it is good practice to properly organize your personal files
+                in a way which is easy for you to understand.</p>
+
         </main>
 
     </div>

@@ -27,7 +27,6 @@ function writeActiveClass($currentLink) {
     <a href="<?php echo $path;?>./index.php"><img class="logo" src="<?php echo $path;?>./assets/img/150x150.png" alt="Team Logo Image"></a>
 
     <ol class="list">
-        <li><a href="<?php echo $path;?>./index.php" <?php  writeActiveClass('index'); ?> >Home</a></li>
         <li><a href="<?php echo $path;?>pages/gettingStarted.php" <?php  writeActiveClass('gettingStarted'); ?> >Getting Started</a></li>
         <li><a href="<?php echo $path;?>pages/commands.php" <?php  writeActiveClass('commands'); ?> >Commands</a></li>
         <li><a href="<?php echo $path;?>pages/userManagement.php" <?php  writeActiveClass('userManagement'); ?> >User Management</a></li>
