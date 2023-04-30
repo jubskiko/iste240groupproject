@@ -95,6 +95,7 @@ ul {
 
     background: #8900F2;
     box-shadow: 5px 5px 100px black;
+    min-height: calc(100vh - 69px);
 }
 
 .logo {
@@ -182,6 +183,7 @@ ul {
         width: 100%;
         animation: growDown 300ms ease-in-out forwards;
         transform-origin: top center;
+        min-height: fit-content;
     }
 
     @keyframes growDown {
