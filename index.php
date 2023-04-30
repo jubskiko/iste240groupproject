@@ -8,11 +8,13 @@
 
     <div class="container">    
 
-        <?php include($path . "assets/inc/nav.php"); ?>
+        <?php $activePage = "index"; include($path . "assets/inc/nav.php"); ?>
 
         <main class="content">
 
             <h1><?php echo($title)?></h1>
+
+            <a class="locator" href="<?php echo $path; ?>index.php"><?php echo $title; ?></a>
 
             <hr>
 
@@ -23,7 +25,9 @@
                 is a computer operating system used to execute programs on the computer. UNIX is widely used and 
                 an essential file management tool, especially for a developer.</p>
 
-            <div class="terminalPhoto"></div> 
+            <div class="terminalPhoto">
+                <img src="assets/img/terminal2.png" alt="Photo of terminal">
+            </div> 
             
             <p> UNIX was initially developed in 1969 at the Bell Labs in Murray Hill, New Jersey. Researchers Dennis 
                 Ritchie and Ken Thompson are accredited as the original developers of UNIX, known initially as AT&T 

@@ -8,11 +8,13 @@
 
     <div class="container">    
 
-        <?php include($path . "./assets/inc/nav.php"); ?>
+        <?php $activePage = "shellScripting"; include($path . "./assets/inc/nav.php"); ?>
 
         <main class="content">
 
             <h1><?php echo($title)?></h1>
+
+            <a class="locator" href="<?php echo $path; ?>index.php">Home/<?php echo $title; ?></a>
 
             <hr>
 
@@ -24,7 +26,9 @@
                 scripts to store data and values. You can instantiate a variable by giving it a name. For example, ‘name=Austin’ 
                 creates a variable labeled ‘name’  with the value of ‘Austin’.</p>
 
-            <div class="shellScriptPhoto"></div>
+            <div class="shellScriptPhoto">
+                <img src="../assets/img/shellScript.webp" alt="Photo of shell script">
+            </div>
 
             <p>A script's flow can be managed using control structures based on conditions or loops. Whereas the "for" and "while" loops 
                 are used to repeatedly run commands, the "if" statement is used to execute commands based on a condition. The "read" 
