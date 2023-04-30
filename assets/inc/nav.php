@@ -1,8 +1,25 @@
+<?php
+function writeActiveClass($currentLink) {
+  // if $activePage is not set when the lef-nav.php is being included, default to 'index'
+  global $activePage;
+
+  // The current page is the active page, then add "active" css to make it highlighted in the left nav
+  if ($activePage == $currentLink) {
+      echo 'class="active"';
+  }
+}
+?>
+
 <!-- for mobile navigation -->
 <div class="mobile-nav-bar">
-  <button id="mobile-nav-hamburger">
-    <img src="<?php echo $path;?>./assets/img/hamburger-menu.svg">
-  </button>
+  <div class="mobile-logo">
+    <img src="<?php echo $path;?>./assets/img/150x150.png">
+  </div>
+  <div>
+    <button id="mobile-nav-hamburger">
+      <img src="<?php echo $path;?>./assets/img/hamburger-menu.svg">
+    </button>
+  </div>
 </div>
 
 <nav class="nav" id="navigation-menu">
@@ -10,17 +27,17 @@
     <a href="<?php echo $path;?>./index.php"><img class="logo" src="<?php echo $path;?>./assets/img/150x150.png" alt="Team Logo Image"></a>
 
     <ol class="list">
-        <a href="<?php echo $path;?>./index.php"><li>Home</li></a>
-        <a href="<?php echo $path;?>pages/gettingStarted.php"><li>Getting Started</li></a>
-        <a href="<?php echo $path;?>pages/commands.php"><li>Commands</li></a>
-        <a href="<?php echo $path;?>pages/userManagement.php"><li>User Management</li></a>
-        <a href="<?php echo $path;?>pages/fileManagement.php"><li>File Management</li></a>
-        <a href="<?php echo $path;?>pages/processManagement.php"><li>Process Management</li></a>
-        <a href="<?php echo $path;?>pages/networking.php"><li>Networking</li></a>
-        <a href="<?php echo $path;?>pages/systemMaintenance.php"><li>System Maintenance</li></a>
-        <a href="<?php echo $path;?>pages/shellScripting.php"><li>Shell Scripting</li></a>
-        <a href="<?php echo $path;?>pages/advancedTopics.php"><li>Advanced Topics</li></a>
-        <a href="<?php echo $path;?>pages/quiz.php"><li>Quiz!</li></a>
+        <li><a href="<?php echo $path;?>./index.php" <?php  writeActiveClass('index'); ?> >Home</a></li>
+        <li><a href="<?php echo $path;?>pages/gettingStarted.php" <?php  writeActiveClass('gettingStarted'); ?> >Getting Started</a></li>
+        <li><a href="<?php echo $path;?>pages/commands.php" <?php  writeActiveClass('commands'); ?> ><li>Commands</a></li>
+        <li><a href="<?php echo $path;?>pages/userManagement.php" <?php  writeActiveClass('userManagement'); ?> >User Management</a></li>
+        <li><a href="<?php echo $path;?>pages/fileManagement.php" <?php  writeActiveClass('fileManagement'); ?> >File Management</a></li>
+        <li><a href="<?php echo $path;?>pages/processManagement.php" <?php  writeActiveClass('processManagement'); ?> >Process Management</a></li>
+        <li><a href="<?php echo $path;?>pages/networking.php" <?php  writeActiveClass('networking'); ?> >Networking</a></li>
+        <li><a href="<?php echo $path;?>pages/systemMaintenance.php" <?php  writeActiveClass('systemMaintenance'); ?> >System Maintenance</a></li>
+        <li><a href="<?php echo $path;?>pages/shellScripting.php" <?php  writeActiveClass('shellScripting'); ?> >Shell Scripting</a></li>
+        <li><a href="<?php echo $path;?>pages/advancedTopics.php" <?php  writeActiveClass('advancedTopics'); ?> >Advanced Topics</a></li>
+        <li><a href="<?php echo $path;?>pages/quiz.php" <?php  writeActiveClass('quiz'); ?> >Quiz!</a></li>
     </ol>
 
 </nav>

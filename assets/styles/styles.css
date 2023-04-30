@@ -34,9 +34,8 @@ a:hover { /*CSS FOR LOGO HOVER*/
     transition: 0.5s;
 }
 
-a li { /*CSS FOR NAV*/
+.nav li { /*CSS FOR NAV*/
     font-family: Source Sans Pro, sans-serif;
-    color: white;
     position: relative;
     right: 20px;
     text-align: center;
@@ -44,19 +43,28 @@ a li { /*CSS FOR NAV*/
     font-size: 20px;
 }
 
+.nav li a {
+    color: white;
+}
+
 a {
     text-decoration: none;
 }
 
-a > li:hover { /*CSS FOR NAV HOVER*/
+.nav li a:hover { /*CSS FOR NAV HOVER*/
     transform: scale(1.04);
     transition: 0.5s;
     color: #f9c80e;
 }
 
-a > li:active { /* active*/
+.nav a:active { /* active*/
     background: #6930c3;
     color: #e7c6ff;
+}
+
+.nav a.active {
+    font-weight: bold;
+    color: #f9c80e;
 }
 
 ul {
@@ -223,13 +231,27 @@ ul {
     }
 
     .mobile-nav-bar {
-        display: block;
+        display: flex;
+        padding: 5px 20px 5px 20px;
+        background-color: #8900F2;
+        box-shadow: inset 0 0 10px #8900F2;
     }
 
     .mobile-nav-bar #mobile-nav-hamburger {
         padding: 10px;
-        background-color: #bd0ee9;
+        background-color: #8900F2;
         border: none;
+    }
+
+    .mobile-logo {
+        height: 50px;
+        width: 50px;
+        flex-grow: 1;
+    }
+
+    .mobile-logo img {
+        width: 50px;
+        height: 50px;
     }
 }
 

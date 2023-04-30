@@ -8,7 +8,7 @@
 
     <div class="container">    
 
-        <?php include($path . "assets/inc/nav.php"); ?>
+        <?php $activePage = "index"; include($path . "assets/inc/nav.php"); ?>
 
         <main class="content">
 
