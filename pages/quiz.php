@@ -27,14 +27,14 @@
         <main class="content">
             <h1><?php echo $title ?></h1>
             <hr>
-            <form id="quizForm" method="post" action="process_quiz.php">
+            <form id="quizForm"  method="post" action="process_quiz.php">
                 <?php foreach ($questions as $index => $question): ?>
                 <p>
                     <?php echo ($index + 1) . ". " . $question["question"]; ?>
                 </p>
                 <?php foreach (range('A', 'D') as $choice): ?>
-                <input type="radio" name="answer_<?php echo $question["id"]; ?>" value="<?php echo $choice; ?>" required>
-                <?php echo $choice . ": " . $question["choice_" . strtolower($choice)]; ?><br>
+                <input type="radio" name="answer_<?php echo $question["id"]; ?>" value="<?php echo $choice; ?>" id="<?php echo $question["id"] ?>_<?php echo $choice ?>" required>
+                <label for="<?php echo $question["id"] ?>_<?php echo $choice ?>"><?php echo $choice . ": " . $question["choice_" . strtolower($choice)]; ?></label><br>
                 <?php endforeach; ?>
                 <br>
                 <?php endforeach; ?>
