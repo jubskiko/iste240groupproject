@@ -13,11 +13,11 @@ function writeActiveClass($currentLink) {
 <!-- for mobile navigation -->
 <div class="mobile-nav-bar">
   <div class="mobile-logo">
-    <img src="<?php echo $path;?>./assets/img/150x150.png">
+  <a href="<?php echo $path;?>./index.php"><img src="<?php echo $path;?>./assets/img/150x150.png" alt="Team Logo Image"></a>
   </div>
   <div>
     <button id="mobile-nav-hamburger">
-      <img src="<?php echo $path;?>./assets/img/hamburger-menu.svg">
+      <img src="<?php echo $path;?>./assets/img/hamburger-menu.svg" alt="Mobile menu">
     </button>
   </div>
 </div>
@@ -27,16 +27,17 @@ function writeActiveClass($currentLink) {
     <a href="<?php echo $path;?>./index.php"><img class="logo" src="<?php echo $path;?>./assets/img/150x150.png" alt="Team Logo Image"></a>
 
     <ol class="list">
-        <li><a class="beginner" href="<?php echo $path;?>pages/gettingStarted.php" <?php  writeActiveClass('gettingStarted'); ?> >Getting Started</a></li>
-        <li><a class="beginner" href="<?php echo $path;?>pages/commands.php" <?php  writeActiveClass('commands'); ?> >Commands</a></li>
-        <li><a class="beginner" href="<?php echo $path;?>pages/userManagement.php" <?php  writeActiveClass('userManagement'); ?> >User Management</a></li>
-        <li><a class="beginner" href="<?php echo $path;?>pages/fileManagement.php" <?php  writeActiveClass('fileManagement'); ?> >File Management</a></li>
-        <li><a class="intermeadiate" href="<?php echo $path;?>pages/processManagement.php" <?php  writeActiveClass('processManagement'); ?> >Process Management</a></li>
-        <li><a class="intermeadiate" href="<?php echo $path;?>pages/networking.php" <?php  writeActiveClass('networking'); ?> >Networking</a></li>
-        <li><a class="intermeadiate" href="<?php echo $path;?>pages/systemMaintenance.php" <?php  writeActiveClass('systemMaintenance'); ?> >System Maintenance</a></li>
-        <li><a class="advanced" href="<?php echo $path;?>pages/shellScripting.php" <?php  writeActiveClass('shellScripting'); ?> >Shell Scripting</a></li>
-        <li><a class="advanced" href="<?php echo $path;?>pages/advancedTopics.php" <?php  writeActiveClass('advancedTopics'); ?> >Advanced Topics</a></li>
-        <li><a class="advanced" href="<?php echo $path;?>pages/quiz.php" <?php  writeActiveClass('quiz'); ?> >Quiz!</a></li>
+        <li><a class="home" href="<?php echo $path;?>index.php"><span <?php  writeActiveClass('index'); ?> >Home</span></a></li>
+        <li><a class="beginner" href="<?php echo $path;?>pages/gettingStarted.php"><span <?php  writeActiveClass('gettingStarted'); ?> >Getting Started</span></a></li>
+        <li><a class="beginner" href="<?php echo $path;?>pages/commands.php"><span <?php  writeActiveClass('commands'); ?> >Commands</span></a></li>
+        <li><a class="beginner" href="<?php echo $path;?>pages/userManagement.php"><span <?php  writeActiveClass('userManagement'); ?> >User Management</span></a></li>
+        <li><a class="beginner" href="<?php echo $path;?>pages/fileManagement.php"><span <?php  writeActiveClass('fileManagement'); ?> >File Management</span></a></li>
+        <li><a class="intermeadiate" href="<?php echo $path;?>pages/processManagement.php"><span <?php  writeActiveClass('processManagement'); ?> >Process Management</span></a></li>
+        <li><a class="intermeadiate" href="<?php echo $path;?>pages/networking.php"><span <?php  writeActiveClass('networking'); ?> >Networking</span></a></li>
+        <li><a class="intermeadiate" href="<?php echo $path;?>pages/systemMaintenance.php"><span <?php  writeActiveClass('systemMaintenance'); ?> >System Maintenance</span></a></li>
+        <li><a class="advanced" href="<?php echo $path;?>pages/shellScripting.php"><span <?php  writeActiveClass('shellScripting'); ?> >Shell Scripting</span></a></li>
+        <li><a class="advanced" href="<?php echo $path;?>pages/advancedTopics.php"><span <?php  writeActiveClass('advancedTopics'); ?> >Advanced Topics</span></a></li>
+        <li><a class="advanced" href="<?php echo $path;?>pages/quiz.php"><span <?php  writeActiveClass('quiz'); ?> >Quiz!</span></a></li>
     </ol>
 
 </nav>

@@ -61,9 +61,28 @@ a {
   transition: 0.5s;
 }
 
-.nav a.active {
-    font-weight: bold;
-    color: #bbadff;
+.nav a span.active {
+  font-weight: bold;
+}
+
+.home span.active {
+  color: #bbadff;
+}
+
+.beginner span.active {
+  color: #2fa02b;
+}
+
+.intermeadiate span.active {
+  color: #f9c80e;
+}
+
+.advanced span.active {
+  color: rgb(214, 25, 25);
+}
+
+.home:hover {
+  color: #bbadff;
 }
 
 .beginner:hover {
@@ -188,6 +207,7 @@ ul {
 }
 
 @media all and (max-width: 800px) {
+
   .nav {
     display: none;
     position: absolute;
