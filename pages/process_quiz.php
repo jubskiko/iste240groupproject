@@ -38,7 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 ?>
 <body>
     <div class="container">    
-    <?php include($path . "assets/inc/nav.php"); ?>
+    <?php $activePage = "quiz"; include($path . "assets/inc/nav.php"); ?>
         <main class="content">
         <h1>Quiz Results</h1>
         <hr>
