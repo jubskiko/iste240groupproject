@@ -61,6 +61,11 @@ a {
   transition: 0.5s;
 }
 
+.nav a.active {
+    font-weight: bold;
+    color: #bbadff;
+}
+
 .beginner:hover {
   color: #2fa02b;
 }
