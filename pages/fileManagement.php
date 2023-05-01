@@ -8,11 +8,13 @@
 
     <div class="container">
 
-        <?php include($path .  "./assets/inc/nav.php"); ?>
+        <?php $activePage = "fileManagement"; include($path .  "./assets/inc/nav.php"); ?>
 
         <main class="content">
 
             <h1>UNIX: File Management</h1>
+
+            <a class="locator" href="<?php echo $path; ?>index.php">Home/<?php echo $title; ?></a>
 
             <hr>
 
@@ -33,6 +35,10 @@
                 are used to store data, programs, scripts, and other kinds of information. These files are identified by their 
                 extensions, which reveal the type of file, and by a combination of letters, numbers, and special characters in 
                 their names. For instance, .txt stands for a text file, .html for an HTML file, and .png for a picture file.</p>
+
+            <p>File Management is important because it is responsible for efficiently organizing an individual's data. Some
+                projects can consist of many different files, so it is good practice to properly organize your personal files
+                in a way which is easy for you to understand.</p>
 
         </main>
 

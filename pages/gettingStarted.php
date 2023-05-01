@@ -8,11 +8,13 @@
 
     <div class="container">    
 
-        <?php include($path . "./assets/inc/nav.php"); ?>
+        <?php $activePage = "gettingStarted"; include($path . "./assets/inc/nav.php"); ?>
 
         <main class="content">
 
             <h1><?php echo($title)?></h1>
+
+            <a class="locator" href="<?php echo $path; ?>index.php">Home/<?php echo $title; ?></a>
 
             <hr>
 
