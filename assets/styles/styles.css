@@ -221,6 +221,19 @@ ul {
   font-weight: bold;
 }
 
+table {
+  font-size: 18px;
+  font-family: Source Sans Pro, sans-serif;
+}
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  padding: 10px;
+}
+
 @media all and (max-width: 800px) {
 
   .nav {
