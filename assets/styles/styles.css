@@ -67,7 +67,7 @@ a {
 }
 
 .home span.active {
-  color: #bbadff;
+  color: #8900f2;
 }
 
 .beginner span.active {
@@ -83,7 +83,7 @@ a {
 }
 
 .home:hover {
-  color: #bbadff;
+  color: #8900f2;
 }
 
 .beginner:hover {
