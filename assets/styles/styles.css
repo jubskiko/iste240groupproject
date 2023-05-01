@@ -159,8 +159,6 @@ ul {
 .terminalPhoto img {
   height: 300px;
   width: 500px;
-  /*background-image: url("../img/terminal2.png"); /*IMAGE SOURCE: https://itnext.io/unix-shells-and-terminals-6012fe713e4f*/
-  /*background-size: cover;*/
   float: right;
 }
 
@@ -171,10 +169,20 @@ ul {
 .treePhoto img {
   height: 300px;
   width: 500px;
-  /*background-image: url("../img/tree.jpg"); /*IMAGE SOURCE: https://www.linuxtrainingacademy.com/linux-directory-structure-and-file-system-hierarchy/*/
-  /*background-size: cover;*/
   float: left;
   margin-right: 20px;
+}
+
+.ProcessStatePhoto {
+    margin-right: 50px;
+  }
+  
+.ProcessStatePhoto img {
+    height: 300px;
+    width: 500px;
+    float: right;,
+    .ProcessStatePhoto
+    margin-left: 20px;
 }
 
 .shellScriptPhoto {
@@ -184,8 +192,6 @@ ul {
 .shellScriptPhoto img {
   height: 300px;
   width: 600px;
-  /*background-image: url("../img/shellScript.webp"); /*IMAGE SOURCE: https://www.guru99.com/introduction-to-shell-scripting.html*/
-  /*background-size: cover;*/
   float: right;
   margin-left: 20px;
 }
@@ -279,13 +285,15 @@ table th, table td {
 
   .terminalPhoto,
   .treePhoto,
-  .shellScriptPhoto {
+  .shellScriptPhoto,
+  .ProcessStatePhoto {
     margin-left: 0;
   }
 
   .terminalPhoto img,
   .treePhoto img,
-  .shellScriptPhoto img {
+  .shellScriptPhoto,
+  .ProcessStatePhoto img {
     height: auto;
     width: 100%;
     float: none;

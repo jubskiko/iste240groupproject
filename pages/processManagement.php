@@ -28,6 +28,10 @@
                 the parent process. The new process can carry out its own set of instructions and runs independently of 
                 the parent process.</p>
 
+            <div class="ProcessStatePhoto">
+                <img src="../assets/img/ProcessState.png" alt="Photo of Process State">
+            </div>
+
             <p>There are three possible states for a UNIX process to be in: running, sleeping, and stopped. A process is 
                 running if it is currently operating. A sleeping process is a process that is expected to operate under 
                 future conditions. A stopped process is a process that is no longer actively running. A stopped process 
